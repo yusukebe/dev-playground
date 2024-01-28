@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "tsup src/index.ts --format esm dist/index.js",
+    "build": "tsup src/index.ts --format esm",
     "publint": "publint"
   },
   "license": "MIT",
