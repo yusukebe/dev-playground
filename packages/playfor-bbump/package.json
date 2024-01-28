@@ -5,7 +5,8 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm",
     "publint": "publint",
-    "release": "yarn build && yarn bumpp --commit 'v%s' package.json dist/**"
+    "prerelease": "yarn build",
+    "release": "yarn bumpp --commit 'v%s' && yarn npm publish"
   },
   "files": [
     "dist"
