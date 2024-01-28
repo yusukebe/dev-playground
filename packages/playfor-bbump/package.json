@@ -5,12 +5,16 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm",
     "publint": "publint",
-    "prerelease": "yarn build",
+    "prepublish": "yarn build",
     "release": "yarn bumpp --commit 'v%s' && yarn npm publish"
   },
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "license": "MIT",
   "devDependencies": {
     "bumpp": "^9.3.0",
