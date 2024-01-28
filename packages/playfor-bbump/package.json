@@ -1,13 +1,15 @@
 {
   "name": "@iekei/playfor-bumpp",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "build": "tsup src/index.ts --format esm",
     "publint": "publint",
-    "prepublishOnly": "yarn install && yarn build",
-    "release": "yarn bumpp"
+    "release": "yarn build && yarn bumpp --commit 'v%s' package.json dist/**"
   },
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "devDependencies": {
     "bumpp": "^9.3.0",
