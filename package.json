@@ -1,16 +1,10 @@
 {
-  "name": "monorepo",
+  "name": "dev-playground",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
   "workspaces": [
     "packages/*"
   ],
-  "devDependencies": {
-    "bumpp": "^9.3.0",
-    "publint": "^0.2.7",
-    "tsup": "^8.0.1",
-    "typescript": "^5.3.3"
-  },
   "packageManager": "yarn@4.0.2"
 }
