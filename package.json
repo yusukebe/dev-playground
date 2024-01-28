@@ -8,6 +8,8 @@
   ],
   "packageManager": "yarn@4.0.2",
   "devDependencies": {
-    "@hono/eslint-config": "^0.0.3"
+    "@hono/eslint-config": "^0.0.3",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
   }
 }
