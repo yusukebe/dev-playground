@@ -6,5 +6,8 @@
   "workspaces": [
     "packages/*"
   ],
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.0.2",
+  "devDependencies": {
+    "@hono/eslint-config": "^0.0.3"
+  }
 }
